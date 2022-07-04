@@ -1,0 +1,10 @@
+###### 配置项目启动端口号
+server:
+  port: 22211
+spring:
+  ###### 配置项目应用名
+  application:
+    name: witmed-emr-consumer
+  ###### 配置项目加载配置文件
+  profiles:
+    active: commons

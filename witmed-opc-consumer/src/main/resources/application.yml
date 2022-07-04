@@ -1,0 +1,10 @@
+###### 配置项目启动端口号
+server:
+  port: 44411
+spring:
+  ###### 配置项目应用名
+  application:
+    name: witmed-opc-consumer
+  ###### 配置项目加载配置文件
+  profiles:
+    active: commons

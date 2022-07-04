@@ -4,17 +4,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                                 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.whackon.witmed</groupId>
 	<artifactId>witmed-opc-provider</artifactId>
-	<version>1.0.0</version>
 	<!-- 设置项目打包方式：jar -->
+	<packaging>jar</packaging>
 
 	<!-- 配置项目父级依赖：Witmed Parent [BEGIN] -->
+	<parent>
+		<groupId>com.whackon.witmed</groupId>
+		<artifactId>witmed-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
 	<!-- 配置项目父级依赖：Witmed Parent [END] -->
 
 	<dependencies>
 		<!-- 配置依赖：Witmed Data Commons [BEGIN] -->
+		<dependency>
+			<groupId>com.whackon.witmed</groupId>
+			<artifactId>witmed-data-commons</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
 		<!-- 配置依赖：Witmed Data Commons [END] -->
 	</dependencies>
 </project>
