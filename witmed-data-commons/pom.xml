@@ -4,38 +4,64 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                                 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.whackon.witmed</groupId>
 	<artifactId>witmed-data-commons</artifactId>
-	<version>1.0.0</version>
 	<!-- 设置项目打包方式：jar -->
+	<packaging>jar</packaging>
 
 	<!-- 配置项目父级依赖：Witmed Parent [BEGIN] -->
+	<parent>
+		<groupId>com.whackon.witmed</groupId>
+		<artifactId>witmed-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
 	<!-- 配置项目父级依赖：Witmed Parent [END] -->
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
 
 	<dependencies>
 		<!-- 配置依赖：Witmed Commons [BEGIN] -->
+		<dependency>
+			<groupId>com.whackon.witmed</groupId>
+			<artifactId>witmed-commons</artifactId>
+			<version>${parent.version}</version>
+		</dependency>
 		<!-- 配置依赖：Witmed Commons [END] -->
 
 		<!-- 配置依赖：MySQL Connector/J [BEGIN] -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
 		<!-- 配置依赖：MySQL Connector/J [END] -->
 
 		<!-- 配置依赖：Druid Spring Boot Starter [BEGIN] -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>${druid-spring-boot-starter.version}</version>
+		</dependency>
 		<!-- 配置依赖：Druid Spring Boot Starter [END] -->
 
 		<!-- 配置依赖：MyBatis Spring Boot Starter [BEGIN] -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>${mybatis-spring-boot-starter.version}</version>
+		</dependency>
 		<!-- 配置依赖：MyBatis Spring Boot Starter [END] -->
 
 		<!-- 配置依赖：MyBatis Plus [BEGIN] -->
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>${mybatis-plus-boot-starter.version}</version>
+		</dependency>
 		<!-- 配置依赖：MyBatis Plus [END] -->
 
 		<!-- 配置依赖：PageHelper Spring Boot Starter [BEGIN] -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>${pagehelper-spring-boot-starter.version}</version>
+		</dependency>
 		<!-- 配置依赖：PageHelper Spring Boot Starter [END] -->
 	</dependencies>
 </project>
