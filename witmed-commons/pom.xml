@@ -4,44 +4,77 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                                 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.whackon.witmed</groupId>
 	<artifactId>witmed-commons</artifactId>
-	<version>1.0.0</version>
 	<!-- 设置项目打包方式：jar -->
+	<packaging>jar</packaging>
 
 	<!-- 配置项目父级依赖：Witmed Parent [BEGIN] -->
+	<parent>
+		<groupId>com.whackon.witmed</groupId>
+		<artifactId>witmed-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
 	<!-- 配置项目父级依赖：Witmed Parent [END] -->
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>
 
 	<dependencies>
 		<!-- 配置依赖：Spring Cloud Starter Netflix Eureka Client [BEGIN] -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 		<!-- 配置依赖：Spring Cloud Starter Netflix Eureka Client [END] -->
 
 		<!-- 配置依赖：Spring Cloud Starter OpenFeign [BEGIN] -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
 		<!-- 配置依赖：Spring Cloud Starter OpenFeign [END] -->
 
 		<!-- 配置依赖：Spring Boot Starter Data Redis [BEGIN] -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
 		<!-- 配置依赖：Spring Boot Starter Data Redis [END] -->
 
 		<!-- 配置依赖：Project Lombok [BEGIN] -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+		</dependency>
 		<!-- 配置依赖：Project Lombok [END] -->
 
 		<!-- 配置依赖：MapStruct Core [BEGIN] -->
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>${mapstruct.version}</version>
+		</dependency>
 		<!-- 配置依赖：MapStruct Core [END] -->
 
 		<!-- 配置依赖：MapStruct Processor [BEGIN] -->
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+			<version>${mapstruct.version}</version>
+		</dependency>
 		<!-- 配置依赖：MapStruct Processor [END] -->
 
 		<!-- 配置依赖：Hutool All [BEGIN] -->
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>${hutool-all.version}</version>
+		</dependency>
 		<!-- 配置依赖：Hutool All [END] -->
 
 		<!-- 配置依赖：Spring Boot Starter Validation [BEGIN] -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 		<!-- 配置依赖：Spring Boot Starter Validation [END] -->
 	</dependencies>
 </project>

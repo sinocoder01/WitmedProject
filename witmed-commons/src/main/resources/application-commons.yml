@@ -1,0 +1,13 @@
+spring:
+  ###### 开启 Spring Boot 对于 Bean ID 的 Override 机制
+  main:
+    allow-bean-definition-overriding: true
+  ###### 配置 Redis 信息
+  redis:
+    host: localhost
+    port: 6379
+###### 配置 Eureka Client 连接 Eureka Server 信息
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka/
