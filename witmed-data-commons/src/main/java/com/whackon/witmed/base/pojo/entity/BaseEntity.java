@@ -15,7 +15,7 @@ import java.util.Date;
 @Data
 public class BaseEntity implements Serializable {
 	private static final long serialVersionUID = 377806458505909427L;
-	private String status;                      // 系统状态：Y-启用，N-禁用
+	private String status;                      // 系统状态：0-禁用，1-启用
 	@TableField("createdBy")
 	private String createdBy;                   // 创建人
 	@TableField("createTime")
