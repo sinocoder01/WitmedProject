@@ -78,4 +78,9 @@ public class BaseConstants {
 	 * <b>token 信息：token 有效时长</b>
 	 */
 	public static final Integer BASE_TOKEN_EXPIRE = Integer.parseInt(props.getProperty("base.token.expire"));
+
+	/**
+	 * <b>token 信息：token 存储 HEADER 对应 name</b>
+	 */
+	public static final String BASE_TOKEN_HEADER = props.getProperty("base.token.header");
 }
