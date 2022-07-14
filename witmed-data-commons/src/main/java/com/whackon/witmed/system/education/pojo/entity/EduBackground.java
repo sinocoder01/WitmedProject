@@ -16,7 +16,7 @@ import lombok.Data;
 @Data
 @TableName("sys_edu_background")
 public class EduBackground extends BaseEntity {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 7550816068344657101L;
 	@TableId(type = IdType.AUTO)
     private Long id;                        // 主键
 	@TableField(value = "code")
