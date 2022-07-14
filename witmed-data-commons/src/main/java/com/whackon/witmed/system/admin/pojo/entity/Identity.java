@@ -1,5 +1,6 @@
 package com.whackon.witmed.system.admin.pojo.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -16,10 +17,10 @@ import lombok.Data;
 @TableName("sys_admin_identity")
 public class Identity extends BaseEntity {
 	private static final long serialVersionUID = 7646673991659330003L;
-	@TableId
+	@TableId(type = IdType.AUTO)
 	private Long id;                        // 主键
 	@TableField(value = "code")
-	private String code;                        // 身份编号
+	private String code;                    // 身份编号
 	@TableField(value = "name")
-	private String name;                        // 身份名称
+	private String name;                    // 身份名称
 }
